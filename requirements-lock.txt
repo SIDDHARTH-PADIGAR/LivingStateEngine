@@ -12,8 +12,6 @@ itsdangerous==2.2.0
 Jinja2==3.1.6
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
-# Editable install with no version control (living-state-engine==0.1.0)
--e c:\users\siddu\livingstateengine
 MarkupSafe==3.0.4
 narwhals==2.27.1
 numpy==2.4.6

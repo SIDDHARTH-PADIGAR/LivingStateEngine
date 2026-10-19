@@ -1,24 +1,23 @@
-
 flowchart TD
     A[Company events] --> B[Validation and normalization]
     B --> C[(SQLite event ledger)]
     C --> D[Chronological replay]
-    D --> E[Deterministic state estimation]
+    D --> E[Deterministic state engine]
 
     E --> F[Current state and evidence]
     E --> G[(Event-time snapshots)]
-    E --> H[(State revision history)]
+    E --> H[(Recorded state revisions)]
 
     F --> I[Recommendation engine]
-    I --> J[(Recommendations and expectations)]
+    I --> J[(Recommendations and expected outcomes)]
     J --> K[(Observed outcomes)]
 
-    F --> L[Streamlit UI]
+    F --> L[Streamlit interface]
     G --> L
     H --> L
     J --> L
     K --> L
 
-    M[Synthetic dataset and labels] --> N[Evaluation runner]
+    M[Synthetic scenarios and labels] --> N[Evaluation runner]
     E --> N
-    N --> O[Accuracy, risk metrics, errors]
+    N --> O[Metrics and misclassification report]
