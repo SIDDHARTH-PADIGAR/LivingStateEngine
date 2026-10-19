@@ -125,6 +125,7 @@ Run the complete test suite:
 ```
 
 The latest recorded test run before the final UI wiring reported 32 passing tests. Rerun the suite against the current checkout to verify the final application integration.
+The current development checkout and a temporary clone of the committed repository both passed all 32 tests. The clone used the existing local Python environment; a fresh dependency installation has not been verified.
 
 ## Evaluation
 
