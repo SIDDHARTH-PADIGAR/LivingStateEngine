@@ -1,0 +1,28 @@
+{
+  "benchmark_type": "held-out scenario challenge",
+  "event_count": 52,
+  "label_source": "Expected statuses are hand-authored in this script, independently of StateEngine output.",
+  "labeled_states": 52,
+  "limitations": "This is a small synthetic challenge, not real-world validation. It is a one-time evaluation of the existing engine rules.",
+  "out_of_order_scenarios": [
+    "late_commitment_completion_arrival",
+    "wrong_risk_resolution_id"
+  ],
+  "scenario_count": 13,
+  "scenarios": [
+    "completed_with_medium_residual_risk",
+    "two_commitments_cross_deadlines",
+    "overdue_commitment_without_status",
+    "status_requires_recovery_confirmation",
+    "risk_reopened_after_resolution",
+    "low_risk_with_medium_issue",
+    "completed_with_overdue_commitment",
+    "invalid_status_after_completion",
+    "wrong_risk_resolution_id",
+    "late_commitment_completion_arrival",
+    "missing_severity_defaults_medium",
+    "critical_issue_with_medium_risk",
+    "healthy_report_cannot_clear_overdue_commitment"
+  ],
+  "synthetic": true
+}

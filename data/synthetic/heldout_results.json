@@ -1,0 +1,131 @@
+{
+  "confusion_matrix": {
+    "at_risk": {
+      "at_risk": 18,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "blocked": {
+      "at_risk": 0,
+      "blocked": 4,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "completed": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 6,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "healthy": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 24,
+      "unknown": 0
+    },
+    "unknown": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 0
+    }
+  },
+  "dataset": {
+    "events": 52,
+    "labeled_states": 52,
+    "scenarios": 13,
+    "synthetic": true
+  },
+  "misclassified_states": [],
+  "notice": "This is a small synthetic challenge, not real-world validation. It is a one-time evaluation of the existing engine rules.",
+  "per_scenario": {
+    "completed_with_medium_residual_risk": {
+      "correct": 4,
+      "total": 4
+    },
+    "completed_with_overdue_commitment": {
+      "correct": 3,
+      "total": 3
+    },
+    "critical_issue_with_medium_risk": {
+      "correct": 5,
+      "total": 5
+    },
+    "healthy_report_cannot_clear_overdue_commitment": {
+      "correct": 4,
+      "total": 4
+    },
+    "invalid_status_after_completion": {
+      "correct": 3,
+      "total": 3
+    },
+    "late_commitment_completion_arrival": {
+      "correct": 4,
+      "total": 4
+    },
+    "low_risk_with_medium_issue": {
+      "correct": 4,
+      "total": 4
+    },
+    "missing_severity_defaults_medium": {
+      "correct": 3,
+      "total": 3
+    },
+    "overdue_commitment_without_status": {
+      "correct": 1,
+      "total": 1
+    },
+    "risk_reopened_after_resolution": {
+      "correct": 5,
+      "total": 5
+    },
+    "status_requires_recovery_confirmation": {
+      "correct": 5,
+      "total": 5
+    },
+    "two_commitments_cross_deadlines": {
+      "correct": 7,
+      "total": 7
+    },
+    "wrong_risk_resolution_id": {
+      "correct": 4,
+      "total": 4
+    }
+  },
+  "state_accuracy": {
+    "latest_explicit_status_baseline": {
+      "accuracy": 0.6154,
+      "correct": 32,
+      "risk_detection": {
+        "f1": 0.1667,
+        "false_negative": 20,
+        "false_positive": 0,
+        "precision": 1.0,
+        "recall": 0.0909,
+        "true_negative": 30,
+        "true_positive": 2
+      },
+      "total": 52
+    },
+    "state_engine": {
+      "accuracy": 1.0,
+      "correct": 52,
+      "risk_detection": {
+        "f1": 1.0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "true_negative": 30,
+        "true_positive": 22
+      },
+      "total": 52
+    }
+  }
+}
