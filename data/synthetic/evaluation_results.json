@@ -1,0 +1,80 @@
+{
+  "dataset": {
+    "events": 256,
+    "labeled_states": 256,
+    "projects": 64,
+    "scenario_templates": 8,
+    "synthetic": true
+  },
+  "notice": "Synthetic benchmark only. Repeated templates are not independent real-world projects.",
+  "risk_detection": {
+    "latest_explicit_status_baseline": {
+      "f1": 0.0,
+      "false_negative": 64,
+      "false_positive": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_negative": 192,
+      "true_positive": 0
+    },
+    "positive_definition": "Ground-truth or predicted status is at_risk or blocked",
+    "state_engine": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_negative": 192,
+      "true_positive": 64
+    }
+  },
+  "state_accuracy": {
+    "latest_explicit_status_baseline": {
+      "accuracy": 0.75,
+      "correct": 192,
+      "total": 256
+    },
+    "state_engine": {
+      "accuracy": 1.0,
+      "correct": 256,
+      "total": 256
+    }
+  },
+  "state_engine_confusion_matrix": {
+    "at_risk": {
+      "at_risk": 48,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "blocked": {
+      "at_risk": 0,
+      "blocked": 16,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "completed": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 24,
+      "healthy": 0,
+      "unknown": 0
+    },
+    "healthy": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 152,
+      "unknown": 0
+    },
+    "unknown": {
+      "at_risk": 0,
+      "blocked": 0,
+      "completed": 0,
+      "healthy": 0,
+      "unknown": 16
+    }
+  }
+}

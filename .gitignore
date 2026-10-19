@@ -1,0 +1,41 @@
+﻿.venv/
+venv/
+env/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tests, coverage and lint caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ruff_cache/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local secrets and environment variables
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local databases and SQLite WAL files
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
