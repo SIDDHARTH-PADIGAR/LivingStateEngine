@@ -168,7 +168,22 @@ The latest recorded run contains 12 hand-authored scenarios, 48 events, and 48 l
 
 The state engine recorded 16 true positives, 32 true negatives, zero false positives, and zero false negatives for risk detection, where `at_risk` and `blocked` count as positive states.
 
-These figures are recorded results from synthetic benchmark runs, not independently verified real-world accuracy.
+
+### Held-out challenge
+
+A separate, developer-authored held-out benchmark tested 13 synthetic scenarios containing 52 events and 52 labeled state estimates.
+
+| Metric | State engine | Latest-status baseline |
+|---|---:|---:|
+| Exact state accuracy | 100% (52/52) | 61.54% (32/52) |
+| Risk precision | 100% | 100% |
+| Risk recall | 100% | 9.09% |
+| Risk F1 | 1.00 | 0.1667 |
+
+The first recorded run had zero state misclassifications. This is evidence of correct behaviour on these authored scenarios, not proof of real-world accuracy. The labels were not independently produced by an external evaluator.
+
+See [docs/evaluation.md](docs/evaluation.md) for the complete results, confusion counts, limitations, and reproduction commands.
+
 
 ## Evaluation limitations
 
